@@ -1,0 +1,29 @@
+<?php require VIEWS_PATH . 'includes/header.phtml'; ?>
+
+
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron text-center">
+        <h1>Listagem</h1>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <img src="https://via.placeholder.com/350" alt="" class="img-responsive">
+            </div>
+
+            <div class="col-sm-12 col-md-6">
+                   <h3><a href="<?=HOME;?>/product/<?=$this->product['id'];?>"> <?=$this->product['name'];?> </a></h3>
+                   <p>  <?=$this->product['description'];?>  </p>
+                   <p>  <?=number_format($this->product['price'], 2,',','.');?>  </p>
+            </div>
+
+
+        </div>
+    </div>
+
+<hr>
+
+
+<?php require VIEWS_PATH . 'includes/footer.phtml'; ?>
